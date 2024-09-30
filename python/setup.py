@@ -46,8 +46,18 @@ def git_describe_version(original_version):
     return gd_version
 
 
+def git_extended_name(original_name):
+    """Get extended name."""
+    if os.environ.get("WHEEL_EXT_NAME"):
+        original_name = str(original_name) + os.environ.get("WHEEL_EXT_NAME")
+    return original_name
+
+
 LIB_LIST, __version__ = get_lib_path()
 __version__ = git_describe_version(__version__)
+# pylint: disable=redefined-builtin
+__name__ = "mlc_llm"
+__name__ = git_extended_name(__name__)
 
 
 class BinaryDistribution(Distribution):
@@ -75,7 +85,7 @@ def main():
         setup_kwargs = {"include_package_data": True}
 
     setup(
-        name="mlc_llm",
+        name=__name__,
         version=__version__,
         description="MLC LLM: an universal LLM deployment engine via ML compilation.",
         url="https://llm.mlc.ai/",
