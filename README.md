@@ -22,10 +22,11 @@ MLC LLM is a machine learning compiler and high-performance deployment engine fo
   <thead>
     <tr>
       <th style="width:15%"> </th>
-      <th style="width:20%">AMD GPU</th>
-      <th style="width:20%">NVIDIA GPU</th>
-      <th style="width:20%">Apple GPU</th>
-      <th style="width:24%">Intel GPU</th>
+      <th style="width:17%">AMD GPU</th>
+      <th style="width:17%">NVIDIA GPU</th>
+      <th style="width:17%">Apple GPU</th>
+      <th style="width:17%">Intel GPU</th>
+      <th style="width:17%">Adreno GPU</th>
     </tr>
   </thead>
   <tbody>
@@ -35,6 +36,7 @@ MLC LLM is a machine learning compiler and high-performance deployment engine fo
       <td>✅ Vulkan, CUDA</td>
       <td>N/A</td>
       <td>✅ Vulkan</td>
+      <td>✅ OpenCL</td>
     </tr>
     <tr>
       <td>macOS</td>
@@ -42,19 +44,20 @@ MLC LLM is a machine learning compiler and high-performance deployment engine fo
       <td>N/A</td>
       <td>✅ Metal</td>
       <td>✅ Metal (iGPU)</td>
+      <td>N/A</td>
     </tr>
     <tr>
       <td>Web Browser</td>
-      <td colspan=4>✅ WebGPU and WASM </td>
+      <td colspan=5>✅ WebGPU and WASM </td>
     </tr>
     <tr>
       <td>iOS / iPadOS</td>
-      <td colspan=4>✅ Metal on Apple A-series GPU</td>
+      <td colspan=5>✅ Metal on Apple A-series GPU</td>
     </tr>
     <tr>
       <td>Android</td>
-      <td colspan=2>✅ OpenCL on Adreno GPU</td>
-      <td colspan=2>✅ OpenCL on Mali GPU</td>
+      <td colspan=4>✅ OpenCL on Mali GPU</td>
+      <td>✅ OpenCL</td>
     </tr>
   </tbody>
 </table>
