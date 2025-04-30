@@ -178,9 +178,9 @@ else()
             mlc_llm
             mlc_llm_module
             mlc_llm_static
+            mlc_cli_chat
             tokenizers_cpp
             sentencepiece-static
-            mlc_cli_chat
             RUNTIME_DEPENDENCY_SET
             tokenizers_c
     RUNTIME DESTINATION bin
