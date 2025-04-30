@@ -43,8 +43,20 @@ build_model phi-2 q4f16_0 phi-2 "--prefill-chunk-size 256 --context-window-size 
 # Phi-3-mini-4k-instruct
 build_model Phi-3-mini-4k-instruct q4f16_0 phi-3 "--prefill-chunk-size 256 --context-window-size 4096"
 
+# Phi-3.5-mini-instruct
+build_model Phi-3.5-mini-instruct q4f16_0 phi-3 "--prefill-chunk-size 256 --context-window-size 4096"
+
 # llava-1.5-7b-hf
 build_model llava-1.5-7b-hf q4f16_0 llava "--prefill-chunk-size 256 --context-window-size 4096"
 
 # Baichuan-7B
 # build_model Baichuan-7B q4f16_0 chatml "--model-type baichuan --prefill-chunk-size 256 --context-window-size 4096"
+
+# DeepSeek-R1-Distill-Qwen-1.5B
+build_model DeepSeek-R1-Distill-Qwen-1.5B q4f16_0 deepseek_r1_qwen "--prefill-chunk-size 256 --context-window-size 4096"
+
+# DeepSeek-R1-Distill-Llama-8B
+build_model DeepSeek-R1-Distill-Llama-8B q4f16_0 deepseek_r1_llama "--prefill-chunk-size 256 --context-window-size 4096"
+
+# DeepSeek-R1-Distill-Qwen-7B - Weight conversion seem to have an error
+#build_model DeepSeek-R1-Distill-Qwen-7B q4f16_0 deepseek_r1_qwen "--prefill-chunk-size 256 --context-window-size 4096"
