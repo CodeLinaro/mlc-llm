@@ -18,7 +18,8 @@ test_model() {
         --model /data/local/tmp/mlc-ci/models/${model}-q4f16_0-MLC \
         --model-lib /data/local/tmp/mlc-ci/models/${model}-q4f16_0-adreno.so \
         --device opencl \
-        --with-prompt \"write a poem about moon in 100 words\""
+        --max-tokens 100
+        --with-prompt \"write a short poem about moon\""
 }
 
 # Setup target
